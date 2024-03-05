@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Pós Graduação</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Scripts --->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7a4db162a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container-fluid navbar-fixed" id="nav-container">
+            <nav class="navbar fixed-top nav-lex">
+                <div class="primeiro-conteudo">
+                    <div id="overlay"></div>
+                    <div id="menu">
+                        <img src="https://lex2.unilasalle.edu.br/lex_web_application/views/template/images/lex_header.png" alt="Lex Header">
+                        <ul id="slide-out">
+                            <li>
+                                <svg class="svg-icon" viewBox="0 0 20 20">
+                                    <path
+                                        d="M18.121,9.88l-7.832-7.836c-0.155-0.158-0.428-0.155-0.584,0L1.842,9.913c-0.262,0.263-0.073,0.705,0.292,0.705h2.069v7.042c0,0.227,0.187,0.414,0.414,0.414h3.725c0.228,0,0.414-0.188,0.414-0.414v-3.313h2.483v3.313c0,0.227,0.187,0.414,0.413,0.414h3.726c0.229,0,0.414-0.188,0.414-0.414v-7.042h2.068h0.004C18.331,10.617,18.389,10.146,18.121,9.88 M14.963,17.245h-2.896v-3.313c0-0.229-0.186-0.415-0.414-0.415H8.342c-0.228,0-0.414,0.187-0.414,0.415v3.313H5.032v-6.628h9.931V17.245z M3.133,9.79l6.864-6.868l6.867,6.868H3.133z">
+                                    </path>
+                                </svg>
+                                <a href="#">Dashboard</a>
+                            </li>
+                            <li>
+                                <svg class="svg-icon" viewBox="0 0 20 20">
+                                    <path
+                                        d="M18.303,4.742l-1.454-1.455c-0.171-0.171-0.475-0.171-0.646,0l-3.061,3.064H2.019c-0.251,0-0.457,0.205-0.457,0.456v9.578c0,0.251,0.206,0.456,0.457,0.456h13.683c0.252,0,0.457-0.205,0.457-0.456V7.533l2.144-2.146C18.481,5.208,18.483,4.917,18.303,4.742 M15.258,15.929H2.476V7.263h9.754L9.695,9.792c-0.057,0.057-0.101,0.13-0.119,0.212L9.18,11.36h-3.98c-0.251,0-0.457,0.205-0.457,0.456c0,0.253,0.205,0.456,0.457,0.456h4.336c0.023,0,0.899,0.02,1.498-0.127c0.312-0.077,0.55-0.137,0.55-0.137c0.08-0.018,0.155-0.059,0.212-0.118l3.463-3.443V15.929z M11.241,11.156l-1.078,0.267l0.267-1.076l6.097-6.091l0.808,0.808L11.241,11.156z">
+                                    </path>
+                                </svg>
+                                <a href="#">Disciplinas</a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="svg-icon">
+                                    <path
+                                        d="M10,10.9c2.373,0,4.303-1.932,4.303-4.306c0-2.372-1.93-4.302-4.303-4.302S5.696,4.223,5.696,6.594C5.696,8.969,7.627,10.9,10,10.9z M10,3.331c1.801,0,3.266,1.463,3.266,3.263c0,1.802-1.465,3.267-3.266,3.267c-1.8,0-3.265-1.465-3.265-3.267C6.735,4.794,8.2,3.331,10,3.331z" />
+                                    <path
+                                        d="M10,12.503c-4.418,0-7.878,2.058-7.878,4.685c0,0.288,0.231,0.52,0.52,0.52c0.287,0,0.519-0.231,0.519-0.52c0-1.976,3.132-3.646,6.84-3.646c3.707,0,6.838,1.671,6.838,3.646c0,0.288,0.234,0.52,0.521,0.52s0.52-0.231,0.52-0.52C17.879,14.561,14.418,12.503,10,12.503z" />
+                                </svg>
+
+
+                                <a target="_blank" href="http://portal.unilasalle.edu.br/">Portal do Aluno</a>
+                            </li>
+                            <li>
+                                <a href="https://drive.google.com/file/d/1AL3rUgrdQGMz2jSQhIBFrJpo6WaSKWzQ/view?usp=sharing" data-position="top"
+                                    data-delay="50" data-tooltip="Acesso às Bibliotecas Digitais" target="_blank">
+                                    <b>Acesso às Bibliotecas Digitais</b>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=FKCxIA_9y6U" data-position="top" data-delay="50"
+                                    data-tooltip="Plágio: como não praticar" target="_self">
+                                    <b>Plágio: como não praticar</b>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://lex.posunilasalle.com.br/dashboard" data-position="top" data-delay="50"
+                                    data-tooltip="Consulta LEX V1 - Pós-Graduação" target="_blank">
+                                    <b>Consulta LEX V1 - Pós-Graduação</b>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://lex1.unilasalle.edu.br" data-position="top" data-delay="50"
+                                    data-tooltip="Consulta LEX V1 - Graduação" target="_blank">
+                                    <b>Consulta LEX V1 - Graduação</b>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a id="openMenu" title="Menu">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div class="barra-pesquisa container d-none d-sm-block">
+                        <form method="POST" onsubmit="realizarPesquisaMobile();return false" accept-charset="UTF-8" name="formPesquisa" class="form-busca-main ">
+                            <i class="fa fa-search nav-icon " aria-hidden="true"></i>
+                            <input placeholder="Pesquisar" class="pesquisa" id="inputPesquisa" autocomplete="off" name="inputPesquisa">
+                            <i class="fa fa-times nav-icon clear-search " onclick="$('#inputPesquisa').val('');$('#pesquisaType').hide();" aria-hidden="true"></i>
+                        </form>
+                    </div>
+                    <a href="https://lex2.unilasalle.edu.br/lex_web_application/handlers/call_dashboard.php?function=listar">
+                        <img src="https://lex2.unilasalle.edu.br/lex_web_application/views/template/images/lex_header.png" alt="Unilasalle LMS" class="logo-menu d-none d-sm-block">
+                    </a>
+                </div>
+                <div class="segundo-conteudo">
+                    <div class="nav-bar-icons">
+                        <a href="http://mail.unilasalle.edu.br/" target="_blank" class="animation-disciplinas">
+                            <img class="email-button" src="https://lex2.unilasalle.edu.br/lex_web_application/views/template/images/icons/email.svg" alt="Google email">
+                        </a>
+                        <a class="notifications_button" href="#!" onclick="mostraNotificacoesHeader()">
+                            <img class="notifications_button" src="https://lex2.unilasalle.edu.br/lex_web_application/views/template/images/icons/notification.svg" alt="notificacoes">
+                        </a>
+                        <img class="profile-image"
+                            src="https://lh3.googleusercontent.com/a/ACg8ocKroswTVnkAP4ceXCrCvwMn5nBaAv8IWONzrmZklNzSfVQ=s96-c"
+                            alt="profile_img">
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">Sua Vitória, Nosso Orgulho! 🌟</h5>
+        <div class="divider"></div><br>
+        <p class="card-text">Sua jornada não termina aqui. Na Universidade La Salle, acreditamos no poder contínuo da educação e no impulso que a
+        busca pelo saber oferece. Por isso, queremos apresentar a você uma oportunidade única para aprimorar ainda mais suas
+        habilidades e abrir novas portas para o futuro.</p>
+      </div>
+    </div>
+    <br>
+<div class="row align-items-stretch">
+    <div class="col-sm-3 mb-4 mb-sm-0">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">🚀 Pós-Graduação na Unilasalle 🚀</h5>
+                <div class="divider"></div><br>
+                <p class="card-text">A Pós-Graduação na Unilasalle é mais do que uma continuação dos seus estudos; é um
+                    investimento no seu futuro
+                    profissional. Este é o momento de elevar suas habilidades, adquirir novos conhecimentos e se
+                    destacar em sua carreira.
+                    <br><br>
+                    Não perca a chance de fazer parte da próxima geração de líderes e inovadores. Inscreva-se agora e
+                    transforme sua paixão
+                    em expertise!
+                    <br><br>
+                    <a class="btn btn-outline-primary" href="https://graduacao.unilasalle.edu.br" role="button"
+                        target="_blank">Matricule-se hoje</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-9">
+        <div class="card text-center">
+            <div class="card-body video">
+                <h5 class="card-title">Invista no Seu Futuro! 🎓</h5>
+                <div class="divider"></div><br>
+                <div class="d-flex flex-column embed-responsive">
+                    <iframe src="https://www.youtube.com/embed/e1JtAgbcHc0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        
+    <script src="setup.js"></script>
+</body>
+</html>
